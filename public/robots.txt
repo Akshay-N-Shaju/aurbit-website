@@ -1,0 +1,11 @@
+# Aurbit — https://aurbit.space
+# Public marketing site. The mobile app and admin tools are not hosted here.
+
+User-agent: *
+Allow: /
+
+# Guidance for language-model crawlers
+# https://aurbit.space/llms.txt
+# https://aurbit.space/llm.txt
+
+Sitemap: https://aurbit.space/sitemap.xml

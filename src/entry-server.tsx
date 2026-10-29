@@ -1,7 +1,10 @@
 import { renderToString } from 'react-dom/server'
 import { StaticRouter } from 'react-router'
 import App from './App'
-import { jsonLd, metaFor, pageUrl, pages } from './seo'
+import { invitePage, jsonLd, metaFor, pageUrl, pages as sitePages } from './seo'
+
+/** Prerendered: the public pages plus the invite shell (kept out of the sitemap). */
+const pages = [...sitePages, invitePage]
 
 export function render(url: string) {
   return renderToString(

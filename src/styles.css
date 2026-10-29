@@ -1175,3 +1175,62 @@ h2 {
     animation: none !important;
   }
 }
+
+/* Invite (/r/:code) */
+.invite {
+  max-width: 640px;
+}
+.invite-card {
+  padding: clamp(24px, 5vw, 40px);
+  border-radius: 28px;
+  background: linear-gradient(160deg, rgba(155, 114, 203, 0.18), rgba(255, 255, 255, 0.03) 60%);
+  border: 1px solid var(--line);
+}
+.invite-avatar {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f6b26b, #d96570 50%, #9b72cb);
+  font: 700 28px var(--display);
+}
+.invite-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.invite-stores {
+  flex-wrap: wrap;
+}
+.invite-code {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px dashed rgba(201, 167, 245, 0.5);
+  background: rgba(0, 0, 0, 0.25);
+}
+.invite-code small {
+  color: var(--faint);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.invite-code > div {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.invite-code code {
+  font: 700 clamp(20px, 5vw, 26px) var(--display);
+  letter-spacing: 0.08em;
+}
+.invite-code p {
+  margin: 10px 0 0;
+  color: var(--soft);
+  font-size: 14px;
+}

@@ -42,6 +42,14 @@ export const pages: PageMeta[] = [
   },
 ]
 
+/** Invite links (/r/:code) share one prerendered shell; the page loads the invite in the browser. */
+export const invitePage: PageMeta = {
+  path: '/r',
+  title: 'You’re invited to Aurbit',
+  description: 'A friend invited you to Aurbit. Join with their invite and you both get bonus aura.',
+  keywords: 'aurbit invite, aurbit referral',
+}
+
 const notFound: PageMeta = {
   path: '/404',
   title: 'Page not found — Aurbit',
@@ -51,6 +59,7 @@ const notFound: PageMeta = {
 
 export function metaFor(url: string): PageMeta {
   const path = url.split('?')[0].replace(/\/$/, '') || '/'
+  if (path === '/r' || path.startsWith('/r/')) return invitePage
   return pages.find((page) => page.path === path) ?? notFound
 }
 

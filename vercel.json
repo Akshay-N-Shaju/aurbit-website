@@ -1,0 +1,19 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/.well-known/apple-app-site-association", "destination": "https://api.aurbit.space/api/v1/meta/apple-app-site-association" },
+    { "source": "/.well-known/assetlinks.json", "destination": "https://api.aurbit.space/api/v1/meta/assetlinks" },
+    { "source": "/api/:path*", "destination": "https://api.aurbit.space/api/:path*" },
+    { "source": "/r/:code", "destination": "/r/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/.well-known/apple-app-site-association",
+      "headers": [{ "key": "Content-Type", "value": "application/json" }]
+    },
+    {
+      "source": "/r/(.*)",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+    }
+  ]
+}

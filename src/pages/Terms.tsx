@@ -82,7 +82,7 @@ export function Terms() {
           Stages, ranges, referral ladders, and decay settings are product configuration. We may change them, correct aura that was granted by a bug or by abuse, and reverse drops that break these terms. We do not owe you a particular aura total, stage, or position in anyone’s orbit.
         </p>
         <p>
-          Notes and reasons you attach to a drop should be something you are willing for that person to read. Do not include passwords, financial details, or anyone’s private contact information.
+          Notes and reasons you attach to a drop, and pings you send, should be something you are willing for that person to read. Pings are limited (one at a time, with a cooldown unless the other person replies) to keep them friendly; do not try to get around those limits. Do not include passwords, financial details, or anyone’s private contact information.
         </p>
       </Section>
 
@@ -201,7 +201,7 @@ export function Terms() {
           </li>
         </ul>
         <p>
-          Aurbit, aurbit.space. These terms were last updated on 1 October 2026.
+          Aurbit, aurbit.space. These terms were last updated on 29 October 2026.
         </p>
       </Section>
     </Legal>

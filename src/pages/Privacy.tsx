@@ -6,7 +6,7 @@ export function Privacy() {
     <Legal
       kicker="Privacy policy"
       title="How Aurbit handles your data."
-      lede="Your phone number signs you in. Contact names stay on your phone. Nearby presence expires in minutes. Aura is a vibe score, not a payment record. You can delete the account, and the number is free to use again."
+      lede="Your phone number signs you in. Contact names stay on your phone. Nearby shows only your distance and forgets you after 3 hours. Aura is a vibe score, not a payment record. You can delete the account, and the number is free to use again."
     >
       <nav className="toc" aria-label="On this page">
         <a href="#who">Who we are</a>
@@ -42,9 +42,10 @@ export function Privacy() {
           <li>a one-way hash of that number, used to match you with people who already have you saved;</li>
           <li>the name, handle, pronouns, and short bio you choose;</li>
           <li>up to five vibe tags from the list in the app;</li>
+          <li>your gender (boy or girl), if you choose one. It is not shown on your profile; we use it to order Nearby (people of the opposite gender first) and to pick the default picture shown when you have no photo, which can let others infer it;</li>
           <li>a profile photo, if you add one;</li>
           <li>your aura total, stage, referral code, and whether someone referred you;</li>
-          <li>privacy settings (who can see your photo, aura, and details; Nearby; anonymous drops; stage; contacts) and notification switches (aura, reminders, social).</li>
+          <li>privacy settings (who can see your photo, aura, and details; Nearby; anonymous drops; stage; contacts) and notification switches (aura, pings, reminders, social, announcements).</li>
         </ul>
         <p>
           We send a one-time code by SMS to prove the number is yours. The code is stored only as a keyed hash, expires in minutes, and is single use. We keep a log that a code was requested, sent, verified, or blocked — not the code itself.
@@ -53,6 +54,10 @@ export function Privacy() {
         <p>When someone gives or drains aura we store the amount, the channel (orbit, nearby, tap, contact, referral, system, or inactivity), an optional reason and note, whether the drop was anonymous, and the receiver’s aura afterwards. We also store connections (who is in whose orbit and how you met), blocks, reports, and referral rewards.</p>
         <p>
           A note is visible to the person who received it. If you send anonymously, and they allow anonymous aura, they see the note and the amount without your name. We still keep the sender on our side so we can enforce limits, investigate reports, and stop abuse. Staff do not browse notes for curiosity; they see them when a report, a safety review, or a legal request requires it.
+        </p>
+        <h3>Pings</h3>
+        <p>
+          When you send a ping we store its text (up to 160 characters), who sent it, who received it, when, whether it was read, and the length of the rally it belongs to. A ping is visible to the two people in the conversation. Staff do not read pings for curiosity; they see them when a report, a safety review, or a legal request requires it.
         </p>
         <h3>Device and session</h3>
         <p>Each signed-in device has a session. We store a device id you generate, a device name, platform (iOS, Android, or web), app version, push token if you allow notifications, IP address, user agent, and when the session was last used. Sessions are how the app stays signed in. We do not use the push token for advertising.</p>
@@ -78,12 +83,15 @@ export function Privacy() {
         </p>
       </Section>
 
-      <Section id="nearby" title="4. Nearby and Tap">
+      <Section id="nearby" title="4. Nearby, location, and Tap">
         <p>
-          Nearby shows people who are in the same place as you and who also have Nearby on. While it is on, the app sends an approximate position so we can answer “who is around”. That position lives in a short-lived cache, on the order of two minutes, and is dropped when it expires, when you turn Nearby off, when you go idle, or when you delete the account. It is not written into your profile record and it is not kept as a location history.
+          Nearby shows people on Aurbit within about 25 metres of you who also have “Show me in Nearby” on. To work, the app sends your approximate position while it is open. If you allow location access “Always”, it also sends your position in the background when you move, so people nearby can find you while Aurbit is closed; Android shows a notification while this is running.
         </p>
         <p>
-          You can hide from Nearby without deleting your account. Other people still cannot see you there once the presence is removed. Tap is a separate, in-the-moment exchange between two phones; we record the aura and the connection, not a map of where the tap happened.
+          Other people only ever see a rounded distance (for example “6 m away”), never where you are. Your position is held in a fast in-memory store, not in your profile record, and Nearby lists you for up to 3 hours after your last position. Your last shared position is kept for up to 30 days so the Aurbit team can investigate safety reports and support requests; it is not shown to other users.
+        </p>
+        <p>
+          Turning “Show me in Nearby” off removes you from Nearby and forgets your last position straight away. You can also limit or revoke location access in your phone’s settings at any time. Tap is a separate, in-the-moment exchange between two phones; we record the aura and the connection, not a map of where the tap happened.
         </p>
       </Section>
 
@@ -130,7 +138,8 @@ export function Privacy() {
           <li>Account data stays while the account is open.</li>
           <li>One-time-code logs are deleted after 90 days.</li>
           <li>Sessions that have been signed out or have expired are deleted after 30 days. An active app that is opened at least once a year can stay signed in; that window is a product setting and can change.</li>
-          <li>Nearby positions expire in about two minutes and are not kept as history.</li>
+          <li>Nearby lists you for up to 3 hours after your last position. Your last shared position is kept for up to 30 days for safety and support, and is deleted sooner if you hide from Nearby or delete the account. We do not keep a history of where you have been.</li>
+          <li>Pings are kept while both accounts exist and are deleted when either person deletes their account.</li>
           <li>Profile photos are deleted when you replace them, remove them, or delete the account.</li>
           <li>Reports and safety records are kept long enough to resolve the case and to prevent the same abuse from returning.</li>
           <li>Host and security logs are kept for a limited period and then deleted or aggregated.</li>
@@ -144,10 +153,10 @@ export function Privacy() {
       <Section id="rights" title="8. Your choices and rights">
         <p>Inside the app you can:</p>
         <ul>
-          <li>edit your name, handle, pronouns, bio, tags, and photo;</li>
+          <li>edit your name, handle, pronouns, bio, gender, tags, and photo;</li>
           <li>choose who sees your photo, aura, and details;</li>
           <li>turn Nearby, anonymous drops, stage display, and contact sync on or off;</li>
-          <li>switch aura, reminder, and social notifications off;</li>
+          <li>switch aura, ping, reminder, social, and announcement notifications off;</li>
           <li>block someone, report a person or a drop, and sign out a device;</li>
           <li>delete the account from the profile settings by confirming the deletion.</li>
         </ul>

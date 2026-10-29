@@ -23,7 +23,15 @@ const FAQS = [
   },
   {
     q: 'How do I disappear from Nearby?',
-    a: 'Profile → Privacy, and turn Nearby off. You are removed from the nearby view right away. The position itself was only kept for a couple of minutes either way.',
+    a: 'Profile → Privacy, and turn “Show me in Nearby” off. You are removed from Nearby right away and your last spot is forgotten. Otherwise Nearby lists you for up to 3 hours after your last position, and only ever shows your distance. To stop background sharing without hiding, set Aurbit’s location access to “While using” in your phone’s settings.',
+  },
+  {
+    q: 'How do pings work?',
+    a: 'Open anyone’s profile and tap Ping to send up to 160 characters. Then it’s their move: you can ping again after 30 minutes, or straight away once they reply. Replies within an hour build a rally, and rallies of 5 and 10 give you both +5 aura. Turn ping notifications off in Profile → Notifications, and block anyone you don’t want to hear from.',
+  },
+  {
+    q: 'My invite link didn’t give aura. Why?',
+    a: 'Your friend has to sign up with the link (or your code) and finish setting up their profile. If they installed the app first on an iPhone, ask them to tap the link again after installing, or enter your code on the sign-in screen.',
   },
   {
     q: 'How do I block or report someone?',

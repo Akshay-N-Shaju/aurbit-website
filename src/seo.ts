@@ -1,5 +1,5 @@
 export const SITE = 'https://aurbit.space'
-export const UPDATED = '1 October 2026'
+export const UPDATED = '29 October 2026'
 
 export type PageMeta = {
   path: string
@@ -13,15 +13,15 @@ export const pages: PageMeta[] = [
     path: '/',
     title: 'Aurbit — Your vibe, in orbit',
     description:
-      'Give aura. Get aura. Aurbit shows your vibe in orbit — bless the people who make your day, nearby or anywhere. For iPhone and Android.',
+      'Give aura, get aura, and watch your orbit glow. Ping people nearby, build rallies, clear the daily Aura Hunt and climb from NPC to Celestial. Free on iPhone and Android.',
     keywords:
-      'aurbit, aurbit.space, aura app, vibe app, social orbit, give aura, nearby friends, contact matching, anonymous aura, iPhone, Android',
+      'aurbit, aurbit.space, aura app, vibe app, gen z app, social orbit, give aura, pings, rallies, aura hunt, nearby friends, invite friends, iPhone, Android',
   },
   {
     path: '/privacy',
     title: 'Privacy policy — Aurbit',
     description:
-      'How Aurbit handles your phone number, profile, hashed contacts, nearby presence, aura history, and account deletion. Effective 1 October 2026.',
+      'How Aurbit handles your phone number, profile, hashed contacts, Nearby location, pings, aura history, and account deletion. Effective 29 October 2026.',
     keywords:
       'aurbit privacy policy, aurbit data, contact hashing, nearby location, account deletion, DPDP, aura history',
   },

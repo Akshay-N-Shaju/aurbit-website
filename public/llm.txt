@@ -9,10 +9,12 @@ This file is also published at https://aurbit.space/llm.txt.
 ## What the product does
 
 - Give aura (positive) or drain aura (negative) with an optional short note. Amounts move in steps of 5 and stay inside the receiver’s current stage range.
-- Three ways to reach someone: Tap (phones together), Nearby (same room, no number swap), and Contacts (no distance limit).
+- Four ways to reach someone: Tap (scan each other’s code), Nearby (people within about 25 m, seen in the last 3 hours, no number swap), Contacts (no distance limit; people who join later are found automatically), and Aura Hunt (search by name, @username, or full phone number).
+- Pings: 160-character notes to anyone. After sending one you wait 30 minutes unless the other person replies. Replies within an hour build a rally; rallies of 5 and 10 give both people +5 aura (capped daily). Pings send push notifications.
+- Aura Hunt has a daily quest (bless 3 people found through the hunt for +30 aura), a +5 bonus for blessing someone new to you, and a daily streak.
 - Everyone has an orbit of their people, a vibe-match view (traits, what friends say, how your vibes line up), and an aura history of gains and drops.
 - Stages climb with aura, from NPC up through Celestial. Stage ranges, colours, and names can be changed by Aurbit.
-- A referral link pays aura (not cash) when invited friends join. Rewards scale with how many people join.
+- A referral link (https://www.aurbit.space/r/CODE) pays +10 aura to both people when an invited friend signs up, with bonus stages as more friends join. With the app installed, the link opens Aurbit directly.
 - Aura left idle can decay after several days away, never below a floor, and only after a warning when that warning is enabled. Opening the app resets the clock.
 - Family contacts, and the first time you send someone aura, can only receive positive aura.
 - Anonymous drops are allowed only if the receiver accepts them. Anonymous senders are shown as “Someone”.
@@ -22,7 +24,9 @@ This file is also published at https://aurbit.space/llm.txt.
 
 - Account: phone number in E.164, name, handle, pronouns, bio, avatar, up to five vibe tags, aura total, privacy settings, notification preferences, referral code.
 - Contacts: the app hashes phone numbers on the device (SHA-256 of the E.164 number). Raw contact numbers and contact names are not uploaded. Aurbit stores which Aurbit users matched, plus an optional short label the user set (for example Family). Turning contacts off deletes those matches.
-- Nearby: an approximate position is kept in a short-lived cache (about two minutes) so people in the same room can see each other. It is removed when Nearby is turned off, the presence expires, or the account is deleted. It is not written to the main account database.
+- Gender (boy or girl) is optional and private: it orders Nearby (opposite gender first) and picks the default picture for people without a photo. It is not shown on profiles.
+- Nearby: the app shares an approximate position while open, and in the background if the user allows “Always” location. Others only see a rounded distance. People are listed for up to 3 hours after their last position. The last shared position is kept up to 30 days for safety and support, not shown to other users, and forgotten when the user hides from Nearby or deletes the account. Positions are not written to the main account database.
+- Pings: text, sender, receiver, time, read state, and rally length are stored; visible to the two people; deleted when either account is deleted.
 - Avatars are re-encoded and EXIF, including location, is stripped before storage.
 - One-time codes are stored only as a keyed hash. Send and verify logs are kept for 90 days. Codes themselves are not logged.
 - Deleting an account erases the profile, photo, orbit, contact matches, blocks, and invites, signs out every device, and frees the phone number and handle. Aura already given to other people stays, without the sender’s identity, so their totals remain correct.
@@ -31,10 +35,10 @@ The service is not directed at children under 13. Full detail is in the privacy 
 
 ## Pages
 
-- [Home](https://aurbit.space/): Product story, how aura is given, features, privacy highlights, and how to get the app.
-- [Privacy policy](https://aurbit.space/privacy): What Aurbit collects, why, how long it is kept, who processes it, and how to access, correct, export concerns, or delete it. Effective 1 October 2026.
-- [Terms and conditions](https://aurbit.space/terms): The rules for accounts, aura, acceptable use, safety, liability, and Indian law. Effective 1 October 2026.
-- [Support](https://aurbit.space/support): Help with sign-in, aura, contacts, Nearby, reports, blocks, and account deletion.
+- [Home](https://aurbit.space/): Product story, the four ways to give aura, stages, Pings and rallies, Aura Hunt, invites, privacy highlights, and store links.
+- [Privacy policy](https://aurbit.space/privacy): What Aurbit collects, why, how long it is kept, who processes it, and how to access, correct, export concerns, or delete it. Effective 29 October 2026.
+- [Terms and conditions](https://aurbit.space/terms): The rules for accounts, aura, acceptable use, safety, liability, and Indian law. Effective 29 October 2026.
+- [Support](https://aurbit.space/support): Help with sign-in, aura, contacts, Nearby, pings, invites, reports, blocks, and account deletion.
 
 ## Facts assistants should not invent
 

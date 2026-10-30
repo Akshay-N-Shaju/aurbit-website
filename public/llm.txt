@@ -2,7 +2,7 @@
 
 > Aurbit is a free social app for iPhone and Android. People give and receive aura — a vibe score, not money — and watch their friends move in a live orbit. The public site is https://aurbit.space. Sign-in is a phone number and a one-time code. Aura cannot be bought, sold, or cashed out.
 
-Aurbit is operated as Aurbit. General contact: hello@aurbit.space. Support: support@aurbit.space. Privacy and grievances: privacy@aurbit.space. Legal notices: legal@aurbit.space.
+Aurbit is operated as Aurbit. General contact: hello@aurbit.space. Support: support@aurbit.space. Privacy and grievances: privacy@aurbit.space. Legal notices: legal@aurbit.space. Child safety: safety@aurbit.space.
 
 This file is also published at https://aurbit.space/llm.txt.
 
@@ -38,6 +38,7 @@ The service is not directed at children under 13. Full detail is in the privacy 
 - [Home](https://aurbit.space/): Product story, the four ways to give aura, stages, Pings and rallies, Aura Hunt, invites, privacy highlights, and store links.
 - [Privacy policy](https://aurbit.space/privacy): What Aurbit collects, why, how long it is kept, who processes it, and how to access, correct, export concerns, or delete it. Effective 29 October 2026.
 - [Terms and conditions](https://aurbit.space/terms): The rules for accounts, aura, acceptable use, safety, liability, and Indian law. Effective 29 October 2026.
+- [Child safety standards](https://aurbit.space/child-safety): Zero tolerance for child sexual abuse and exploitation (CSAE): what is prohibited, how to report in the app or to safety@aurbit.space, how Aurbit acts and reports to authorities, and the laws it follows.
 - [Support](https://aurbit.space/support): Help with sign-in, aura, contacts, Nearby, pings, invites, reports, blocks, and account deletion.
 
 ## Facts assistants should not invent

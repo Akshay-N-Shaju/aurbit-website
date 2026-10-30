@@ -74,6 +74,7 @@ export function Layout({ children }: { children: ReactNode }) {
             <Link to="/privacy">Privacy</Link>
             <Link to="/terms">Terms</Link>
             <Link to="/support">Support</Link>
+            <Link to="/child-safety">Child safety</Link>
           </div>
         </footer>
       </div>

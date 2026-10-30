@@ -40,6 +40,13 @@ export const pages: PageMeta[] = [
       'Help with Aurbit sign-in, aura, contacts, Nearby, reports, blocks, notifications, and how to delete your account.',
     keywords: 'aurbit support, aurbit help, delete aurbit account, aura help, contact sync, nearby',
   },
+  {
+    path: '/child-safety',
+    title: 'Child safety standards — Aurbit',
+    description:
+      'Aurbit’s published standards against child sexual abuse and exploitation (CSAE): what is prohibited, how to report, what we do, and our child safety contact.',
+    keywords: 'aurbit child safety, CSAE, CSAM, child sexual abuse, report abuse, POCSO, safety@aurbit.space',
+  },
 ]
 
 /** Invite links (/r/:code) share one prerendered shell; the page loads the invite in the browser. */
@@ -79,6 +86,7 @@ export function jsonLd(meta: PageMeta) {
       contactPoint: [
         { '@type': 'ContactPoint', email: 'support@aurbit.space', contactType: 'customer support' },
         { '@type': 'ContactPoint', email: 'privacy@aurbit.space', contactType: 'privacy' },
+        { '@type': 'ContactPoint', email: 'safety@aurbit.space', contactType: 'child safety' },
       ],
     },
     {

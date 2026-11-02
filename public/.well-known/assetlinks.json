@@ -1,0 +1,15 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.aurbit.app",
+      "sha256_cert_fingerprints": [
+        "EA:57:12:F8:6C:CC:ED:32:21:8C:4A:2B:B7:F8:CE:F0:CB:0E:2C:8F:39:EE:22:E5:57:9D:2D:E5:E3:4F:CA:A1",
+        "73:15:DB:0A:04:B5:6C:89:87:F4:E8:D5:71:DE:B6:97:A0:44:8D:80:7A:84:92:48:CB:46:D3:3A:E6:8B:36:2A",
+        "63:C4:5B:E8:F8:B4:5D:0B:E7:A7:D2:02:A6:FF:65:02:85:FD:DA:40:6F:AD:E4:8B:C5:8B:63:B8:46:8D:D2:BC",
+        "CD:D0:99:0B:3D:D7:48:20:9A:4E:D2:C0:15:E9:BE:DD:9B:AB:14:20:92:4B:E0:6A:ED:41:D2:75:AD:F4:FF:04"
+      ]
+    }
+  }
+]
